@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="WALFIT account deletion: in-app steps and an email request option for people without app access.">
+  <meta name="referrer" content="no-referrer">
+  <title>Account Deletion Request — WALFIT</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../" aria-label="WALFIT legal home">WALFIT</a>
+      <nav class="site-nav" aria-label="Main navigation"><a href="../">Overview</a><a href="../privacy/">Privacy Policy</a><a href="./" aria-current="page">Delete Account</a></nav>
+    </div>
+  </header>
+  <main id="main" class="container">
+    <div class="hero">
+      <p class="eyebrow">Legal &amp; privacy / 02</p>
+      <h1>Delete your WALFIT account</h1>
+      <p class="lead">Find the in-app deletion steps, or prepare an email request to delete your account and associated data when you cannot access the app.</p>
+      <p class="meta"><span>No login required to read this page</span><span>Email requests are not automated</span></p>
+    </div>
+    <div class="page-layout">
+      <nav class="toc" aria-label="Account deletion contents">
+        <h2>On this page</h2>
+        <ol>
+          <li><a href="#email-request">Request without the app</a></li>
+          <li><a href="#verification">Ownership &amp; next steps</a></li>
+          <li><a href="#in-app">Delete inside WALFIT</a></li>
+          <li><a href="#removed">What deletion removes</a></li>
+          <li><a href="#delete-data">Delete Data &amp; billing</a></li>
+          <li><a href="#retained">What may remain</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ol>
+      </nav>
+      <article class="document" aria-label="Account-deletion request information">
+        <section id="email-request">
+          <h2>Request deletion without the app</h2>
+          <p>You do not need to reinstall WALFIT to prepare an account-deletion request. This mailbox is personally monitored by Waleed Mohamed. Requests are reviewed manually; sending an email does not automatically delete an account. Use this privacy, support and deletion contact:</p>
+          <div class="request-box">
+            <h3>Email the developer</h3>
+            <p><a href="mailto:walfit2026@hotmail.com">walfit2026@hotmail.com</a><br><strong>Subject:</strong> WALFIT account deletion request</p>
+            <a class="button" href="mailto:walfit2026@hotmail.com?subject=WALFIT%20account%20deletion%20request&amp;body=I%20request%20deletion%20of%20my%20WALFIT%20account%20and%20associated%20data.%0D%0A%0D%0AAccount%20email%3A%20%0D%0ASign-in%20method%20%28if%20known%29%3A%20%0D%0A%0D%0AI%20will%20not%20include%20passwords%2C%20authentication%20codes%2C%20tokens%20or%20health%20information.">Prepare deletion-request email</a>
+            <p class="small">Opens your email app. Review and send the message yourself. If it does not open, copy the address and subject above. Opening this link does not submit a request or delete an account.</p>
+          </div>
+          <p>Include only:</p>
+          <ol>
+            <li>The email address associated with your WALFIT account.</li>
+            <li>Your sign-in method, if you know it.</li>
+            <li>A clear statement that you want your account and associated data deleted.</li>
+          </ol>
+          <p>If you cannot access the original account email, or do not know which account you used, explain that briefly. Do not include sensitive supporting documents in your initial request.</p>
+          <div class="info-note"><p><strong>Keep your information safe.</strong> Never email passwords, one-time authentication codes, tokens, workout exports or sensitive health information. An account email helps identify the account; it does not, by itself, prove ownership.</p></div>
+        </section>
+        <section id="verification">
+          <h2>Ownership verification and next steps</h2>
+          <p>We need to establish that a request concerns your account before deleting it. Providing an account email or sending a message does not, by itself, prove ownership. If you cannot access your original account email, explain this in your request so the account-access issue can be reviewed.</p>
+          <p>Requests involve personal review, account-ownership verification and handling of the account and associated data. We do not promise a fixed response or completion time. If more information is needed to assess your request, it must not include passwords, authentication codes, tokens or sensitive health information.</p>
+          <p>This website does not sign you in, submit requests automatically or perform automatic deletion. Keep your email correspondence so you can follow up about the request and its outcome.</p>
+        </section>
+        <section id="in-app">
+          <h2>Delete your account inside WALFIT</h2>
+          <p><strong>Settings → Account &amp; data → Delete Account</strong></p>
+          <ol class="steps">
+            <li>Open WALFIT and its <strong>Settings</strong> menu.</li>
+            <li>Select <strong>Account &amp; data</strong>.</li>
+            <li>Choose <strong>Delete Account</strong>.</li>
+            <li>Review the confirmation and verify your identity using the account's supported sign-in method.</li>
+            <li>Confirm deletion and follow the completion message.</li>
+          </ol>
+          <h3>If deletion is interrupted</h3>
+          <p>If server deletion was confirmed but local completion was interrupted, reopen WALFIT and use the explicit cleanup/recovery action when offered. Recovery completes the saved local operation without repeating server deletion.</p>
+          <p>If a record cannot be verified or completion still fails, contact <a href="mailto:walfit2026@hotmail.com">walfit2026@hotmail.com</a> for help. Do not assume that uninstalling the app deletes your cloud account or data.</p>
+          <p>A failed response can occur after some server records have already been deleted. Do not assume that an error means nothing happened.</p>
+        </section>
+        <section id="removed">
+          <h2>What Delete Account removes</h2>
+          <p>A successful in-app Delete Account operation targets the following:</p>
+          <ul>
+            <li>Your Firebase Authentication account.</li>
+            <li>Your private Firestore user document and its subcollections, including profile/fitness-plan information, stored workout/progress and nutrition records, custom content/images, and membership/coaching records located in that tree.</li>
+            <li>Matching shared program-reminder records.</li>
+            <li>Supported app-owned local workout, nutrition, draft and account-preference records whose ownership matches the exact account, when local cleanup completes on that device.</li>
+          </ul>
+          <p>Deleting your sign-in account alone does not remove all associated data. Requests handled outside the app must cover both. They cannot remotely erase local mobile files, drafts, cached data or scheduled local notifications. The device cleanup and notification behavior described here applies to the in-app flow.</p>
+          <p>Records successfully removed cannot be restored through the app.</p>
+          <h3>WALFIT notifications on this device</h3>
+          <p>On successful server deletion, the in-app Delete Account flow requests cancellation of all WALFIT local notifications and suppresses automatic rescheduling. This includes reminders from <strong>other WALFIT accounts previously used on that device</strong>. An eligible new account can enable notifications again after user settings and permission checks.</p>
+          <p>This does not affect other applications' notifications or revoke OS notification permission. Local cancellation does not establish that any independent server push service has stopped or its installation identifiers have been removed.</p>
+        </section>
+        <section id="delete-data">
+          <h2>Delete Data is a different option</h2>
+          <p><strong>Delete Data</strong> resets personal content while keeping the Firebase Authentication account, sign-in information and specified role, package/access, subscription and billing-related metadata. You may need to sign in again afterward. Choose <strong>Delete Account</strong> to remove the account itself.</p>
+          <p>Delete Data disables supported water/meal/workout reminders and cancels rest/PT reminders through its settings cleanup. It keeps specified membership, subscription, billing and account-access records.</p><p>Ordinary Logout signs out; cloud data, local account files, drafts and preferences can remain. Logout does not delete your saved account information or guarantee removal of cached data or notification identifiers.</p>
+          <p>If you have a separate paid subscription or billing arrangement, account deletion does not by itself confirm that it has been cancelled. Contact support about that arrangement; you can still request account deletion.</p>
+        </section>
+        <section id="retained">
+          <h2>What may remain, and why</h2>
+          <dl class="data-list">
+            <div><dt>Membership and access records after Delete Data</dt><dd>Delete Data keeps the login and specified membership, subscription, billing-related and access metadata so the retained account can keep its assigned access. Delete Account also targets those records when they are stored inside your private account data.</dd></div>
+            <div><dt>Limited account-reset security record</dt><dd>Limited account-deletion security information, including an account identifier, reset state and timestamps, may remain outside your private account data to prevent stale sessions from recreating deleted content. No fixed expiration period is specified here, and the account-deletion flow does not automatically remove this record.</dd></div>
+            <div><dt>Local recovery and reminder information</dt><dd>Limited account identifiers, status, timestamps and reminder settings can remain to complete interrupted cleanup and prevent reminders from restarting. Temporary recovery or staging files may also remain after an interruption and require successful recovery or cleanup before removal; completion of the main recovery record does not guarantee removal of every staging file. The main local recovery record is removed after successful finalization; other reset and notification-suppression information can remain separately.</dd></div>
+            <div><dt>Older or unverifiable local files</dt><dd>Cleanup removes supported records that can safely be attributed to the account. Files with unknown or ambiguous ownership can remain to avoid erasing another account’s data. Contact support if cleanup cannot finish.</dd></div>
+            <div><dt>References in other records</dt><dd>References to a coach or administrator in other users’ records, and shared operational records, are outside the automatic private-account cleanup. They require separate assessment without deleting other users’ information.</dd></div>
+            <div><dt>Account-deletion request emails</dt><dd>Waleed Mohamed retains account-deletion request emails for 90 days after the deletion request is completed, then manually deletes them from the support mailbox. This is a manual operational policy, not an automated app or email-deletion feature. It does not guarantee immediate erasure of copies retained in the email provider’s logs or backups, and does not set a retention period for unrelated support correspondence.</dd></div>
+            <div><dt>Provider logs and backups</dt><dd>The account-deletion flow does not itself erase provider operational logs, cloud backups or device backups. This policy does not specify a verified deletion schedule for those copies or promise that they disappear immediately.</dd></div>
+            <div><dt>Other devices and shared copies</dt><dd>Deletion is not a remote wipe of other or offline devices or SDK-managed caches. It cannot recall summaries already shared with recipients or remove original images from your photo library.</dd></div>
+          </dl>
+          <p>Except for the 90-day manual retention policy for completed account-deletion request emails, no fixed retention periods are specified here for remaining security, recovery, unrelated support correspondence or external records. These limitations are not a promise of immediate erasure from every backup, or a justification for indefinite retention. Contact support about remaining account-linked information.</p>
+          <p>See the <a href="../privacy/#retention">Privacy Policy’s retention section</a> for more detail.</p>
+        </section>
+        <section id="contact">
+          <h2>Contact</h2>
+          <p>WALFIT is operated by <strong>Waleed Mohamed</strong>, an individual developer based in Egypt, and is not a registered company.</p>
+          <address>Privacy, support and account deletion: <a href="mailto:walfit2026@hotmail.com">walfit2026@hotmail.com</a></address>
+          <p>Read the <a href="../privacy/">Privacy Policy</a> for the broader data practices.</p>
+        </section>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><p><strong>WALFIT · Legal &amp; privacy</strong></p><p>Independent individual developer · Egypt</p><p>Waleed Mohamed · <a href="mailto:walfit2026@hotmail.com">walfit2026@hotmail.com</a></p></div>
+      <nav class="footer-links" aria-label="Footer navigation"><a href="../">Overview</a><a href="../privacy/">Privacy Policy</a><a href="mailto:walfit2026@hotmail.com">Contact</a></nav>
+    </div>
+  </footer>
+</body>
+</html>
